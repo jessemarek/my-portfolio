@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavBar: React.FC = () => {
+export const NavBar: React.FC = () => {
   return (
     <nav className="site-nav">
       <ul className="nav-links">
@@ -26,5 +26,3 @@ const NavBar: React.FC = () => {
     </nav>
   );
 };
-
-export default NavBar;
