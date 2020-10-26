@@ -1,6 +1,5 @@
 import React from "react";
-import { NavBar } from "./components/common/NavBar";
-import { ContentSection } from "./components/common/ContentSection";
+import { NavBar, ContentSection, ContactForm } from "./components/common";
 import {
   aboutData,
   projectData,
@@ -13,6 +12,11 @@ const App: React.FC = () => {
   return (
     <>
       <header>
+        <h1>Jesse Marek</h1>
+        <div>
+          <img src="/img.png" alt="" />
+          <img src="/img.png" alt="" />
+        </div>
         <NavBar />
       </header>
       <ContentSection data={aboutData} />
@@ -21,25 +25,7 @@ const App: React.FC = () => {
       <ContentSection data={interestsData} />
       <ContentSection data={contactData} />
 
-      <form className="contact-form">
-        <label>
-          Name
-          <input />
-        </label>
-        <label>
-          Email
-          <input />
-        </label>
-        <label>
-          Phone Number
-          <input />
-        </label>
-        <label>
-          Message
-          <textarea />
-        </label>
-        <button>Submit</button>
-      </form>
+      <ContactForm />
     </>
   );
 };
