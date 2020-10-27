@@ -10,19 +10,12 @@ import {
   projectData,
   buildWeekData,
   skillsData,
-  contactData,
 } from "./site-content";
 
 import "./styles/index.scss";
 
 const App: React.FC = () => {
-  const sections = [
-    aboutData,
-    projectData,
-    buildWeekData,
-    skillsData,
-    contactData,
-  ];
+  const sections = [aboutData, projectData, buildWeekData, skillsData];
 
   return (
     <>
