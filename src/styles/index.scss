@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, ivory, lightgray, ivory);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 2%;
+  }
+}
+
+.section-description {
+  width: 90%;
+  margin: 3% auto;
+}
+
+.nav-links {
+  margin: 3% auto;
+
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+}
+
+.project-card {
+  margin: 5%;
+  padding: 5%;
+  box-shadow: 6px 6px 18px #292929;
+
+  pre {
+    margin: 1% auto 3%;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  img {
+    border: 2px solid #292929;
+  }
+
+  p {
+    width: 90%;
+    margin: 2% auto;
+  }
+
+  a {
+    display: inline-block;
+    width: 35%;
+    margin: 7% 7% 0;
+    border-radius: 7px;
+    padding: 1%;
+    background: darkslategrey;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+#skills {
+  li {
+    display: inline-block;
+    margin: 2%;
+    border-radius: 7px;
+    padding: 2% 3%;
+    text-align: center;
+
+    &:nth-child(odd) {
+      background: darkslategrey;
+      color: whitesmoke;
+    }
+
+    &:nth-child(even) {
+      background: wheat;
+      color: black;
+    }
+  }
+}
+
+header,
+footer {
+  background: darkslategrey;
+  color: whitesmoke;
+}
+
+footer {
+  padding: 5%;
+  text-align: center;
+}

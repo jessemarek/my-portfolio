@@ -7,7 +7,7 @@ export const projectData = {
     {
       id: 1,
       name: "Story Squad",
-      img_src: "",
+      img_src: "/assets/images/storysquad-thumbnail.png",
       site_url: "https://c.storysquad.dev/",
       gitHub_url: "https://github.com/Lambda-School-Labs/story-squad-fe-c",
       description:
@@ -15,8 +15,8 @@ export const projectData = {
     },
     {
       id: 2,
-      name: "Hero Guide",
-      img_src: "",
+      name: "Soul Hunters Hero Guide",
+      img_src: "/assets/images/shhg-thumbnail.png",
       site_url: "https://heroguide.now.sh/",
       gitHub_url: "https://github.com/jessemarek/shhg-react",
       description:

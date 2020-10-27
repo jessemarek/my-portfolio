@@ -13,6 +13,8 @@ import {
   contactData,
 } from "./site-content";
 
+import "./styles/index.scss";
+
 const App: React.FC = () => {
   const sections = [
     aboutData,

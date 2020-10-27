@@ -7,7 +7,7 @@ export const buildWeekData = {
     {
       id: 1,
       name: "Saltiest Hacker News Trolls",
-      img_src: "",
+      img_src: "/assets/images/hacker-trolls-thumbnail.png",
       site_url: "https://salty-trolls.now.sh/",
       gitHub_url: "https://github.com/Build-Week-Saltiest-Hacker/front-end",
       description:
@@ -16,7 +16,7 @@ export const buildWeekData = {
     {
       id: 2,
       name: "Lambda Dev Desk Queue",
-      img_src: "",
+      img_src: "/assets/images/dev-desk-thumbnail.png",
       site_url: "https://dev-desk-queue.now.sh/",
       gitHub_url: "https://github.com/bw-dev-desk-queue-3/fe",
       description:
@@ -25,7 +25,7 @@ export const buildWeekData = {
     {
       id: 3,
       name: "Conway's Game of Life",
-      img_src: "",
+      img_src: "/assets/images/game-of-life-thumbnail.png",
       site_url: "https://marekgameoflife.now.sh/",
       gitHub_url: "https://github.com/jessemarek/CS-build-week",
       description:
