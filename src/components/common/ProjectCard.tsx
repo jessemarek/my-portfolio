@@ -11,7 +11,11 @@ export const ProjectCard: React.FC<Props> = (props) => {
   return (
     <div className="project-card">
       <pre className="project-name">{name}</pre>
-      {img_src && <img src={img_src} alt="project thumbnail image" />}
+      {img_src && (
+        <div className="img-container">
+          <img src={img_src} alt="project thumbnail image" />
+        </div>
+      )}
       <p>{description}</p>
       <a href={site_url} target="_blank" rel="noreferrer">
         Visit Site
