@@ -8,8 +8,8 @@ import {
 import {
   aboutData,
   projectData,
+  buildWeekData,
   skillsData,
-  interestsData,
   contactData,
 } from "./site-content";
 
@@ -17,8 +17,8 @@ const App: React.FC = () => {
   const sections = [
     aboutData,
     projectData,
+    buildWeekData,
     skillsData,
-    interestsData,
     contactData,
   ];
 
