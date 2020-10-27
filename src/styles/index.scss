@@ -15,6 +15,7 @@ body {
 h1,
 h2,
 h3 {
+  width: 100%;
   text-align: center;
 }
 
@@ -46,6 +47,7 @@ ul {
   margin: 5%;
   padding: 5%;
   box-shadow: 6px 6px 18px #292929;
+  background: ivory;
 
   pre {
     margin: 1% auto 3%;
@@ -53,8 +55,14 @@ ul {
     text-align: center;
   }
 
-  img {
-    border: 2px solid #292929;
+  .img-container {
+    display: flex;
+    justify-content: center;
+
+    img {
+      border: 2px solid #292929;
+      max-height: 200px;
+    }
   }
 
   p {
@@ -91,6 +99,49 @@ ul {
     &:nth-child(even) {
       background: wheat;
       color: black;
+    }
+  }
+}
+
+section {
+  margin: 5% auto 15%;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  form {
+    width: 79%;
+    border: 1px solid #292929;
+    padding: 10%;
+    background: ivory;
+
+    label,
+    input,
+    textarea,
+    button {
+      display: block;
+      width: 100%;
+    }
+
+    input,
+    textarea {
+      margin: 5% 0;
+    }
+
+    input {
+      height: 2rem;
+    }
+
+    button {
+      margin: 10% auto 0;
+      border-radius: 7px;
+      padding: 5%;
+      background: darkslategrey;
+      color: whitesmoke;
+      font-size: 1.2rem;
     }
   }
 }
