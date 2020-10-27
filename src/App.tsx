@@ -13,17 +13,13 @@ const App: React.FC = () => {
     <>
       <header>
         <h1>Jesse Marek</h1>
-        <div>
-          <img src="/img.png" alt="" />
-          <img src="/img.png" alt="" />
-        </div>
         <NavBar />
       </header>
-      <ContentSection data={aboutData} />
-      <ContentSection data={projectData} />
-      <ContentSection data={skillsData} />
-      <ContentSection data={interestsData} />
-      <ContentSection data={contactData} />
+      <ContentSection key={1} data={aboutData} />
+      <ContentSection key={2} data={projectData} />
+      <ContentSection key={3} data={skillsData} />
+      <ContentSection key={4} data={interestsData} />
+      <ContentSection key={5} data={contactData} />
 
       <ContactForm />
     </>
