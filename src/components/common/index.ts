@@ -1,6 +1,6 @@
-import { NavBar } from "./NavBar";
+import { Header } from "./Header";
 import { ContentSection } from "./ContentSection";
 import { ContactForm } from "./ContactForm";
 import { Footer } from "./Footer";
 
-export { NavBar, ContentSection, ContactForm, Footer };
+export { Header, ContentSection, ContactForm, Footer };

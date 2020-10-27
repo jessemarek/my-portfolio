@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  NavBar,
+  Header,
   ContentSection,
   ContactForm,
   Footer,
@@ -24,11 +24,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <header>
-        <h1>Jesse Marek</h1>
-        <NavBar />
-      </header>
-
+      <Header />
       {sections &&
         sections.map((section, idx) => (
           <ContentSection key={idx} data={section} />
