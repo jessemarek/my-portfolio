@@ -99,7 +99,7 @@ ul {
   }
 
   p {
-    width: 90%;
+    width: 95%;
     margin: 2% auto;
   }
 
@@ -137,8 +137,8 @@ ul {
     }
 
     &:nth-child(even) {
-      background: wheat;
-      color: black;
+      background: lightslategrey;
+      color: whitesmoke;
     }
   }
 }
