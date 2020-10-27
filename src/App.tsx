@@ -1,5 +1,10 @@
 import React from "react";
-import { NavBar, ContentSection, ContactForm } from "./components/common";
+import {
+  NavBar,
+  ContentSection,
+  ContactForm,
+  Footer,
+} from "./components/common";
 import {
   aboutData,
   projectData,
@@ -28,10 +33,8 @@ const App: React.FC = () => {
         sections.map((section, idx) => (
           <ContentSection key={idx} data={section} />
         ))}
-
       <ContactForm />
-
-      <footer>© 2020 Jesse Marek -- All Rights Reserved</footer>
+      <Footer />
     </>
   );
 };
