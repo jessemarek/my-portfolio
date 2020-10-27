@@ -9,14 +9,14 @@ export const projectData = {
       name: "Story Squad",
       img_url: "",
       site_url: "https://c.storysquad.dev/",
-      gitHub_url: "",
+      gitHub_url: "https://github.com/Lambda-School-Labs/story-squad-fe-c",
     },
     {
       id: 2,
       name: "Hero Guide",
       img_url: "",
       site_url: "https://heroguide.now.sh/",
-      gitHub_url: "",
+      gitHub_url: "https://github.com/jessemarek/shhg-react",
     },
   ],
 };

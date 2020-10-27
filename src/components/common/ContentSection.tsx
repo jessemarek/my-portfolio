@@ -11,7 +11,7 @@ export const ContentSection: React.FC<Props> = (props) => {
   return (
     <section id={id}>
       <h2 className="section-title">{title}</h2>
-      <p>{description}</p>
+      <p className="section-description">{description}</p>
       {projects
         ? projects.map((project) => (
             <ProjectCard key={project.id} project={project} />

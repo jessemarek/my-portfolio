@@ -9,19 +9,29 @@ import {
 } from "./site-content";
 
 const App: React.FC = () => {
+  const sections = [
+    aboutData,
+    projectData,
+    skillsData,
+    interestsData,
+    contactData,
+  ];
+
   return (
     <>
       <header>
         <h1>Jesse Marek</h1>
         <NavBar />
       </header>
-      <ContentSection key={1} data={aboutData} />
-      <ContentSection key={2} data={projectData} />
-      <ContentSection key={3} data={skillsData} />
-      <ContentSection key={4} data={interestsData} />
-      <ContentSection key={5} data={contactData} />
+
+      {sections &&
+        sections.map((section, idx) => (
+          <ContentSection key={idx} data={section} />
+        ))}
 
       <ContactForm />
+
+      <footer>© 2020 Jesse Marek -- All Rights Reserved</footer>
     </>
   );
 };
