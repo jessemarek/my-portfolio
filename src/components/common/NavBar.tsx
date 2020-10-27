@@ -17,9 +17,6 @@ export const NavBar: React.FC = () => {
           <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#interests">Interests</a>
-        </li>
-        <li>
           <a href="#contact">Contact</a>
         </li>
       </ul>
