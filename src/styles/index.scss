@@ -127,18 +127,29 @@ ul {
   li {
     display: inline-block;
     margin: 2%;
+    border: 1px solid #292929;
     border-radius: 7px;
     padding: 2% 3%;
     text-align: center;
+    box-shadow: 3px 3px 16px #292929;
 
     &:nth-child(odd) {
-      background: darkslategrey;
+      background: linear-gradient(
+        45deg,
+        lightslategrey,
+        darkslategrey,
+        lightslategrey
+      );
       color: whitesmoke;
     }
 
     &:nth-child(even) {
-      background: lightslategrey;
-      color: whitesmoke;
+      background: linear-gradient(45deg, lightgrey, grey, lightgrey);
+      color: #292929;
+    }
+
+    pre {
+      font-size: 1.2rem;
     }
   }
 }

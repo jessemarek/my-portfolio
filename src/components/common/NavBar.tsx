@@ -5,9 +5,6 @@ export const NavBar: React.FC = () => {
     <nav className="site-nav">
       <ul className="nav-links">
         <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
           <a href="#projects">Projects</a>
         </li>
         <li>
@@ -15,6 +12,9 @@ export const NavBar: React.FC = () => {
         </li>
         <li>
           <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
         </li>
       </ul>
     </nav>

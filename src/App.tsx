@@ -15,7 +15,7 @@ import {
 import "./styles/index.scss";
 
 const App: React.FC = () => {
-  const sections = [aboutData, projectData, buildWeekData, skillsData];
+  const sections = [projectData, buildWeekData, skillsData, aboutData];
 
   return (
     <>
