@@ -13,7 +13,7 @@ export const ProjectCard: React.FC<Props> = (props) => {
       <pre className="project-name">{name}</pre>
       {img_src && (
         <div className="img-container">
-          <img src={img_src} alt="project thumbnail image" />
+          <img src={img_src} alt="project thumbnail" />
         </div>
       )}
       <p>{description}</p>
