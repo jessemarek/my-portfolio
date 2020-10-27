@@ -29,7 +29,7 @@ export const buildWeekData = {
       site_url: "https://marekgameoflife.now.sh/",
       gitHub_url: "https://github.com/jessemarek/CS-build-week",
       description:
-        "A project to create your own version of the famous Conway's Game of Life. *Note: the focus of this project was on creating the algorithm that contols the games behaivor and not the styling of the site.",
+        "The focus of this project was on creating the algorithm that follows the rules of Conway's Game of Life.",
     },
   ],
 };

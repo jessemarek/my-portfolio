@@ -20,7 +20,7 @@ export const projectData = {
       site_url: "https://heroguide.now.sh/",
       gitHub_url: "https://github.com/jessemarek/shhg-react",
       description:
-        "This is where it all began. This was the first website I built. I taught myself about HTML and CSS and deployed it using Wordpress. In this project I revisited and refactored it using modern a modern tech stack. This version is built using React and utilizes a Node/Express API to serve up the data.",
+        "This is where it all began. This was the first website I built. I taught myself about HTML and CSS and deployed it using Wordpress. In this project I revisited and refactored it using a modern tech stack. This version is built using React and utilizes a Node/Express API to serve up the data.",
     },
   ],
 };

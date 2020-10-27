@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(45deg, ivory, lightgray, ivory);
+  background: linear-gradient(45deg, ivory, lightslategrey, ivory);
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -38,8 +38,35 @@ ul {
   margin: 3% auto;
 
   a {
+    position: relative;
     text-decoration: none;
     color: whitesmoke;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      background: whitesmoke;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+#projects,
+#build-week {
+  @media screen and (min-width: 800px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
@@ -48,6 +75,12 @@ ul {
   padding: 5%;
   box-shadow: 6px 6px 18px #292929;
   background: ivory;
+
+  @media screen and (min-width: 800px) {
+    width: 30%;
+    margin: 0;
+    padding: 1%;
+  }
 
   pre {
     margin: 1% auto 3%;
@@ -74,12 +107,19 @@ ul {
     display: inline-block;
     width: 35%;
     margin: 7% 7% 0;
+    border: 2px solid darkslategrey;
     border-radius: 7px;
     padding: 1%;
     background: darkslategrey;
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: whitesmoke;
+      color: darkslategrey;
+    }
   }
 }
 
@@ -137,18 +177,26 @@ section {
 
     button {
       margin: 10% auto 0;
+      border: 2px solid darkslategrey;
       border-radius: 7px;
       padding: 5%;
       background: darkslategrey;
       color: whitesmoke;
       font-size: 1.2rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: whitesmoke;
+        color: darkslategrey;
+        cursor: pointer;
+      }
     }
   }
 }
 
 header,
 footer {
-  background: darkslategrey;
+  background: linear-gradient(45deg, lightslategrey, darkslategrey);
   color: whitesmoke;
 }
 
