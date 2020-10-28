@@ -22,5 +22,32 @@ export const projectData = {
       description:
         "This is where it all began. This was the first website I built. I taught myself about HTML and CSS and deployed it using Wordpress. In this project I revisited and refactored it using a modern tech stack. This version is built using React and utilizes a Node/Express API to serve up the data.",
     },
+    {
+      id: 3,
+      name: "Saltiest Hacker News Trolls",
+      img_src: "/assets/images/hacker-trolls-thumbnail.png",
+      site_url: "https://salty-trolls.now.sh/",
+      gitHub_url: "https://github.com/Build-Week-Saltiest-Hacker/front-end",
+      description:
+        "An app that rates and ranks hacker news commenters by negativity of comment sentiment.",
+    },
+    {
+      id: 4,
+      name: "Lambda Dev Desk Queue",
+      img_src: "/assets/images/dev-desk-thumbnail.png",
+      site_url: "https://dev-desk-queue.now.sh/",
+      gitHub_url: "https://github.com/bw-dev-desk-queue-3/fe",
+      description:
+        "An app designed to allow an admin to manage help desk tickets that come in from Lambda School Students.",
+    },
+    {
+      id: 5,
+      name: "Conway's Game of Life",
+      img_src: "/assets/images/game-of-life-thumbnail.png",
+      site_url: "https://marekgameoflife.now.sh/",
+      gitHub_url: "https://github.com/jessemarek/CS-build-week",
+      description:
+        "The focus of this project was on creating the algorithm that follows the rules of Conway's Game of Life.",
+    },
   ],
 };
