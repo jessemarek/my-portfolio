@@ -36,10 +36,10 @@ export const ProjectCard: React.FC<Props> = (props) => {
         <p>{description}</p>
       </div>
       <div className="link-btns">
-        <a href={site_url} target="_blank" rel="noreferrer">
+        <a href={site_url} target="_blank" rel="noopener noreferrer">
           Visit Site
         </a>
-        <a href={gitHub_url} target="_blank" rel="noreferrer">
+        <a href={gitHub_url} target="_blank" rel="noopener noreferrer">
           GitHub Repo
         </a>
       </div>
