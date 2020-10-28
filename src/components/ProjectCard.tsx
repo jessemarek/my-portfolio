@@ -1,5 +1,5 @@
 import React from "react";
-import { Project } from "../../interfaces/Project";
+import { Project } from "../interfaces/Project";
 
 interface Props {
   project: Project;

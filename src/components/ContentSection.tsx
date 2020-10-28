@@ -1,5 +1,5 @@
 import React from "react";
-import { Content } from "../../interfaces/Content";
+import { Content } from "../interfaces/Content";
 import { ProjectCard } from "./ProjectCard";
 
 interface Props {

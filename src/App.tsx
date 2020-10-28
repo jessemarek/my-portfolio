@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Header,
-  ContentSection,
-  ContactForm,
-  Footer,
-} from "./components/common";
+import { Header, ContentSection, ContactForm, Footer } from "./components";
 import {
   aboutData,
   projectData,
