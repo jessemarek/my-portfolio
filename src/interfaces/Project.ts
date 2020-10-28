@@ -5,4 +5,5 @@ export interface Project {
   site_url: string;
   gitHub_url: string;
   description: string;
+  build_week?: boolean;
 }

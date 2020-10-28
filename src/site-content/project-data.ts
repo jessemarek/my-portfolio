@@ -2,7 +2,7 @@ export const projectData = {
   id: "projects",
   title: "Projects",
   description:
-    "These are some of the projects I have worked on as a student at Lambda School as well as some personal projects I built for myself or to learn new skills.",
+    "These are some of the projects I have worked on as a student at Lambda School as well as some personal projects I built for myself or to learn new skills. Several of these projects were done during Lambda School Build Weeks. What is a Build Week? At Lambda School, a build week is sort of like a test. It is a way to show that you have mastered all of the skills learned during the current unit of instruction. A unit is a one month - or 4 sprints - long block of instruction. It consists of 3 weeks of instruction followed up by a build week. This is where you demonstrate your understanding of all the concepts you learned in a collaborative group project with other students. Each project team is comprised of students at different points along the journey through Lambda School. The Build Week projects were greenfield projects built in one week by a team of student devs.",
   projects: [
     {
       id: 1,
@@ -30,6 +30,7 @@ export const projectData = {
       gitHub_url: "https://github.com/Build-Week-Saltiest-Hacker/front-end",
       description:
         "An app that rates and ranks hacker news commenters by negativity of comment sentiment.",
+      build_week: true,
     },
     {
       id: 4,
@@ -39,6 +40,7 @@ export const projectData = {
       gitHub_url: "https://github.com/bw-dev-desk-queue-3/fe",
       description:
         "An app designed to allow an admin to manage help desk tickets that come in from Lambda School Students.",
+      build_week: true,
     },
     {
       id: 5,
@@ -48,6 +50,7 @@ export const projectData = {
       gitHub_url: "https://github.com/jessemarek/CS-build-week",
       description:
         "The focus of this project was on creating the algorithm that follows the rules of Conway's Game of Life.",
+      build_week: true,
     },
   ],
 };
