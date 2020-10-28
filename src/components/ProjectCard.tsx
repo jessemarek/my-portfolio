@@ -16,13 +16,21 @@ export const ProjectCard: React.FC<Props> = (props) => {
           <img src={img_src} alt="project thumbnail" />
         </div>
       )}
+      <span className="exit-icon" role="img" aria-label="exit icon">
+        X
+      </span>
+      <span className="info-icon" role="img" aria-label="info icon">
+        💬
+      </span>
       <p>{description}</p>
-      <a href={site_url} target="_blank" rel="noreferrer">
-        Visit Site
-      </a>
-      <a href={gitHub_url} target="_blank" rel="noreferrer">
-        GitHub Repo
-      </a>
+      <div className="link-btns">
+        <a href={site_url} target="_blank" rel="noreferrer">
+          Visit Site
+        </a>
+        <a href={gitHub_url} target="_blank" rel="noreferrer">
+          GitHub Repo
+        </a>
+      </div>
     </div>
   );
 };
