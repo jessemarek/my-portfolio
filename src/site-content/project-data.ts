@@ -6,15 +6,6 @@ export const projectData = {
   projects: [
     {
       id: 1,
-      name: "Story Squad",
-      img_src: "/assets/images/storysquad-thumbnail.png",
-      site_url: "https://c.storysquad.dev/",
-      gitHub_url: "https://github.com/Lambda-School-Labs/story-squad-fe-c",
-      description:
-        "Story Squad is an interactive educational platform aimed at children ages 8-12, allowing them to read a story and help create the story by uploading handwritten 'side quests' with illustrations. Built during Lambda School's Labs which is the final portion of the school's Full Stack Web Dev course.",
-    },
-    {
-      id: 2,
       name: "Soul Hunters Hero Guide",
       img_src: "/assets/images/shhg-thumbnail.png",
       site_url: "https://heroguide.now.sh/",
@@ -23,7 +14,25 @@ export const projectData = {
         "This is where it all began. This was the first website I built. I taught myself about HTML and CSS and deployed it using Wordpress. In this project I revisited and refactored it using a modern tech stack. This version is built using React and utilizes a Node/Express API to serve up the data.",
     },
     {
+      id: 2,
+      name: "Story Squad",
+      img_src: "/assets/images/storysquad-thumbnail.png",
+      site_url: "https://c.storysquad.dev/",
+      gitHub_url: "https://github.com/Lambda-School-Labs/story-squad-fe-c",
+      description:
+        "Story Squad is an interactive educational platform aimed at children ages 8-12, allowing them to read a story and help create the story by uploading handwritten 'side quests' with illustrations. Built during Lambda School's Labs which is the final portion of the school's Full Stack Web Dev course.",
+    },
+    {
       id: 3,
+      name: "Portfolio Website",
+      img_src: "/assets/images/portfolio-thumbnail.png",
+      site_url: "none",
+      gitHub_url: "https://github.com/jessemarek/my-portfolio",
+      description:
+        "The Portfolio Site you are currently on. Still a WiP and it may never actually ever be 'done' as I always enjoy tweaking things. For this project I decided to take a stab a TypeScript and I am absolutely loving it!",
+    },
+    {
+      id: 4,
       name: "Saltiest Hacker News Trolls",
       img_src: "/assets/images/hacker-trolls-thumbnail.png",
       site_url: "https://salty-trolls.now.sh/",
@@ -33,7 +42,7 @@ export const projectData = {
       build_week: true,
     },
     {
-      id: 4,
+      id: 5,
       name: "Lambda Dev Desk Queue",
       img_src: "/assets/images/dev-desk-thumbnail.png",
       site_url: "https://dev-desk-queue.now.sh/",
@@ -43,7 +52,7 @@ export const projectData = {
       build_week: true,
     },
     {
-      id: 5,
+      id: 6,
       name: "Conway's Game of Life",
       img_src: "/assets/images/game-of-life-thumbnail.png",
       site_url: "https://marekgameoflife.now.sh/",
