@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, ContentSection, ContactForm, Footer } from "./components";
+import { Header, ContentSection, ContactSection, Footer } from "./components";
 import { aboutData, projectData, skillsData } from "./site-content";
 
 import "./styles/index.scss";
@@ -14,7 +14,7 @@ const App: React.FC = () => {
         sections.map((section, idx) => (
           <ContentSection key={idx} data={section} />
         ))}
-      <ContactForm />
+      <ContactSection />
       <Footer />
     </>
   );
