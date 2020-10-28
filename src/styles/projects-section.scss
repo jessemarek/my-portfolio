@@ -13,6 +13,7 @@
   padding: 5%;
   box-shadow: 6px 6px 18px #292929;
   background: ivory;
+  font-family: monospace;
 
   @media screen and (min-width: 800px) {
     width: 30%;
@@ -20,9 +21,10 @@
     padding: 1%;
   }
 
-  pre {
+  h4 {
     margin: 1% auto 3%;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-weight: 100;
     text-align: center;
   }
 
@@ -54,15 +56,15 @@
     left: 10px;
     color: whitesmoke;
 
-    &:hover + p {
+    &:hover + div.description-overlay {
       display: flex;
-      justify-items: center;
-      align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
       opacity: 0.9;
     }
   }
 
-  p {
+  .description-overlay {
     display: none;
     position: absolute;
     top: 0;
@@ -74,6 +76,17 @@
     color: whitesmoke;
     opacity: 0;
     transition: opacity 0.5s ease;
+
+    .build-week-title {
+      width: 100%;
+      margin: 1rem;
+      text-align: center;
+    }
+
+    p,
+    a {
+      font-size: 1.6rem;
+    }
   }
 
   .link-btns {
