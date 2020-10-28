@@ -3,6 +3,27 @@
   justify-content: center;
   flex-wrap: wrap;
 
+  ul {
+    li {
+      display: inline-block;
+      margin: 8px;
+      border: 1px solid #292929;
+      border-radius: 7px;
+      padding: 1rem 1.6rem;
+      text-align: center;
+      box-shadow: 3px 3px 3px #292929;
+      background: linear-gradient(45deg, lightgrey, grey, lightgrey);
+
+      a {
+        font-size: 2.4rem;
+        font-weight: bold;
+        font-family: monospace;
+        text-decoration: none;
+        color: #292929;
+      }
+    }
+  }
+
   form {
     width: 79%;
     border: 1px solid #292929;
