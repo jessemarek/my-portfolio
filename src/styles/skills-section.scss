@@ -1,0 +1,31 @@
+#skills {
+  li {
+    display: inline-block;
+    margin: 8px;
+    border: 1px solid #292929;
+    border-radius: 7px;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    box-shadow: 3px 3px 16px #292929;
+
+    &:nth-child(odd) {
+      background: linear-gradient(
+        45deg,
+        lightslategrey,
+        darkslategrey,
+        lightslategrey
+      );
+      color: whitesmoke;
+    }
+
+    &:nth-child(even) {
+      background: linear-gradient(45deg, lightgrey, grey, lightgrey);
+      color: #292929;
+    }
+
+    pre {
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+  }
+}

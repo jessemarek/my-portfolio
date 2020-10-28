@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(45deg, ivory, lightslategrey, ivory);
+  font-family: "Noto Sans JP", sans-serif;
+
+  #root {
+    font-size: 1.6rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 2%;
+    }
+  }
+
+  .section-description {
+    width: 90%;
+    margin: 3% auto;
+  }
+}
+
+section {
+  margin: 5% auto 15%;
+}
+
+header,
+footer {
+  background: linear-gradient(45deg, lightslategrey, darkslategrey);
+  color: whitesmoke;
+}
+
+footer {
+  padding: 5%;
+  text-align: center;
+}
