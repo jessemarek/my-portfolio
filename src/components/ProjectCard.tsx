@@ -6,11 +6,18 @@ interface Props {
 }
 
 export const ProjectCard: React.FC<Props> = (props) => {
-  const { name, img_src, site_url, gitHub_url, description } = props.project;
+  const {
+    name,
+    img_src,
+    site_url,
+    gitHub_url,
+    description,
+    build_week,
+  } = props.project;
 
   return (
     <div className="project-card">
-      <pre className="project-name">{name}</pre>
+      <h4 className="project-name">{name}</h4>
       {img_src && (
         <div className="img-container">
           <img src={img_src} alt="project thumbnail" />
@@ -22,7 +29,12 @@ export const ProjectCard: React.FC<Props> = (props) => {
       <span className="info-icon" role="img" aria-label="info icon">
         💬
       </span>
-      <p>{description}</p>
+      <div className="description-overlay">
+        {build_week && (
+          <p className="build-week-title">-- Build Week Project --</p>
+        )}
+        <p>{description}</p>
+      </div>
       <div className="link-btns">
         <a href={site_url} target="_blank" rel="noreferrer">
           Visit Site
