@@ -12,11 +12,31 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  font-size: 1.6rem;
+}
+
 h1,
 h2,
 h3 {
   width: 100%;
   text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.6rem;
 }
 
 ul {
@@ -84,7 +104,7 @@ ul {
 
   pre {
     margin: 1% auto 3%;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 
@@ -126,10 +146,10 @@ ul {
 #skills {
   li {
     display: inline-block;
-    margin: 2%;
+    margin: 8px;
     border: 1px solid #292929;
     border-radius: 7px;
-    padding: 2% 3%;
+    padding: 1rem 1.6rem;
     text-align: center;
     box-shadow: 3px 3px 16px #292929;
 
@@ -149,7 +169,8 @@ ul {
     }
 
     pre {
-      font-size: 1.2rem;
+      font-size: 2.4rem;
+      font-weight: bold;
     }
   }
 }
@@ -190,10 +211,10 @@ section {
       margin: 10% auto 0;
       border: 2px solid darkslategrey;
       border-radius: 7px;
-      padding: 5%;
+      padding: 1rem;
       background: darkslategrey;
       color: whitesmoke;
-      font-size: 1.2rem;
+      font-size: 2.4rem;
       transition: all 0.3s ease;
 
       &:hover {

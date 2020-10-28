@@ -41,7 +41,7 @@ export const ContactForm: React.FC = () => {
           />
         </label>
         <label>
-          Phone Number
+          Phone
           <input
             name="phone"
             type="text"
