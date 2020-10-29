@@ -17,7 +17,7 @@ export const projectData = {
       id: 2,
       name: "Story Squad",
       img_src: "/assets/images/storysquad-thumbnail.png",
-      site_url: "https://c.storysquad.dev/",
+      site_url: "none",
       gitHub_url: "https://github.com/Lambda-School-Labs/story-squad-fe-c",
       description:
         "Story Squad is an interactive educational platform aimed at children ages 8-12, allowing them to read a story and help create the story by uploading handwritten 'side quests' with illustrations. Built during Lambda School's Labs which is the final portion of the school's Full Stack Web Dev course.",
