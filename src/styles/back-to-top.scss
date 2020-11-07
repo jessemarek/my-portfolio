@@ -1,7 +1,15 @@
 #back-to-top {
   position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: 1rem;
+  right: 1rem;
   font-size: 3rem;
-  color: whitesmoke;
+  color: #292929;
+
+  svg {
+    width: 44px;
+    border: 1px solid #292929;
+    border-radius: 7px;
+    background: linear-gradient(45deg, lightgrey, grey, lightgrey);
+    box-shadow: 3px 3px 3px #292929;
+  }
 }
