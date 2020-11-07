@@ -19,6 +19,8 @@ export const skillsData = {
     "Knex",
     "SQLite3",
     "PostgreSQL",
+    "RESTful APIs",
+    "Relational DBs",
     "Git",
     "GitHub",
     "Deployment",
@@ -29,7 +31,6 @@ export const skillsData = {
     "Cypress.io",
     "Python",
     "Agile Workflow",
-    "Styled Components",
     "Ant Design Components",
     "React Beautiful DnD",
 
