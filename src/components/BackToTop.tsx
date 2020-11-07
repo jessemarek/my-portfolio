@@ -5,7 +5,7 @@ export const BackToTop: React.FC = () => {
   const [visible, setVisible] = useState<boolean>(false);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 280) {
+    if (window.scrollY > 180) {
       setVisible(true);
     } else {
       setVisible(false);
@@ -22,7 +22,7 @@ export const BackToTop: React.FC = () => {
           href="#"
           title="Back to Top"
         >
-          <i className="far fa-caret-square-up"></i>
+          <i className="fas fa-caret-up"></i>
         </Link>
       ) : null}
     </>
