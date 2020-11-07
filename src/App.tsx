@@ -1,5 +1,11 @@
 import React from "react";
-import { Header, ContentSection, ContactSection, Footer } from "./components";
+import {
+  Header,
+  ContentSection,
+  ContactSection,
+  Footer,
+  BackToTop,
+} from "./components";
 import { aboutData, projectData, skillsData } from "./site-content";
 
 import "./styles/index.scss";
@@ -16,6 +22,7 @@ const App: React.FC = () => {
         ))}
       <ContactSection />
       <Footer />
+      <BackToTop />
     </>
   );
 };
