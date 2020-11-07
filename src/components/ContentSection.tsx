@@ -23,7 +23,7 @@ export const ContentSection: React.FC<Props> = (props) => {
         <ul>
           {skill_list.map((skill, idx) => (
             <li key={idx}>
-              <pre>{skill}</pre>
+              <span>{skill}</span>
             </li>
           ))}
         </ul>
