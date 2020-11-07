@@ -1,20 +1,29 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export const NavBar: React.FC = () => {
   return (
     <nav className="site-nav">
       <ul className="nav-links">
         <li>
-          <a href="#projects">Projects</a>
+          <Link to="projects" smooth={true} href="#projects">
+            Projects
+          </Link>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <Link to="skills" smooth={true} href="#skills">
+            Skills
+          </Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link to="about" smooth={true} href="#about">
+            About
+          </Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="contact" smooth={true} href="#contact">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
