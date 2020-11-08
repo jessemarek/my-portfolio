@@ -1,20 +1,22 @@
 import React from "react";
-import { Project } from "../interfaces/Project";
 
 interface Props {
-  project: Project;
+  details: Project;
 }
 
-export const ProjectCard: React.FC<Props> = (props) => {
-  const {
-    name,
-    img_src,
-    site_url,
-    gitHub_url,
-    description,
-    build_week,
-  } = props.project;
+export interface Project {
+  id: number;
+  name: string;
+  img_src: string;
+  site_url: string;
+  gitHub_url: string;
+  description: string;
+  build_week?: boolean;
+}
 
+export const ProjectCard: React.FC<Props> = ({
+  details: { name, img_src, site_url, gitHub_url, description, build_week },
+}) => {
   return (
     <div className="project-card">
       <h4 className="project-name">{name}</h4>
