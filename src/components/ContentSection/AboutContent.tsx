@@ -10,5 +10,5 @@ export interface About {
 }
 
 export const AboutContent: React.FC<Props> = ({ content: { details } }) => {
-  return <p>{details}</p>;
+  return <p className="section-description">{details}</p>;
 };
