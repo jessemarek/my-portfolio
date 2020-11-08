@@ -40,17 +40,3 @@ export const ContentSection: React.FC<Props> = ({
     </section>
   );
 };
-
-/*
-
-<h2 className="section-title">{title}</h2>
-      {description ? (
-        <p className="section-description">{description}</p>
-      ) : null}
-      {projects
-        ? projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))
-        : null}
-
-*/
