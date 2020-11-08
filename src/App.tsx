@@ -1,26 +1,34 @@
 import React from "react";
+import { Header, ContentSection, Footer, BackToTop } from "./components";
 import {
-  Header,
-  ContentSection,
-  ContactSection,
-  Footer,
-  BackToTop,
-} from "./components";
-import { aboutData, projectData, skillsData } from "./site-content";
+  projectContent,
+  skillsContent,
+  aboutContent,
+  interestsContent,
+} from "./site-content";
 
 import "./styles/index.scss";
 
 const App: React.FC = () => {
-  const sections = [projectData, skillsData, aboutData];
+  const contactContent = {
+    id: "contact",
+    title: "Contact",
+    content: { type: "CONTACT" },
+  };
+  const sections = [
+    projectContent,
+    skillsContent,
+    aboutContent,
+    contactContent,
+  ];
 
   return (
     <>
       <Header />
       {sections &&
-        sections.map((section, idx) => (
-          <ContentSection key={idx} data={section} />
+        sections.map((section, index) => (
+          <ContentSection key={index} content={section} />
         ))}
-      <ContactSection />
       <Footer />
       <BackToTop />
     </>

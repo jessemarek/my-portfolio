@@ -1,7 +1,6 @@
 import { Header } from "./Header";
-import { ContentSection } from "./ContentSection";
-import { ContactSection } from "./ContactSection";
+import { ContentSection } from "./ContentSection/ContentSection";
 import { Footer } from "./Footer";
 import { BackToTop } from "./BackToTop";
 
-export { Header, ContentSection, ContactSection, Footer, BackToTop };
+export { Header, ContentSection, Footer, BackToTop };
