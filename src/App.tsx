@@ -25,6 +25,15 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
+      <h2 className="header-subtitle">
+        <span role="img" aria-label="laptop emoji">
+          💻
+        </span>{" "}
+        Let's Code Something Cool Together!{" "}
+        <span role="img" aria-label="rocket emoji">
+          🚀
+        </span>
+      </h2>
       {sections &&
         sections.map((section, index) => (
           <ContentSection key={index} content={section} />
