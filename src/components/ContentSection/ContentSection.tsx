@@ -52,14 +52,5 @@ export const ContentSection: React.FC<Props> = ({
             <ProjectCard key={project.id} project={project} />
           ))
         : null}
-      {skill_list ? (
-        <ul>
-          {skill_list.map((skill, idx) => (
-            <li key={idx}>
-              <span>{skill}</span>
-            </li>
-          ))}
-        </ul>
-      ) : null}
 
 */
