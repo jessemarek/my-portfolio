@@ -1,5 +1,5 @@
 import React from "react";
-import { Project, ProjectCard } from "./ProjectCard";
+import { Project, ProjectCard } from "./ProjectCard/ProjectCard";
 
 interface Props {
   content: Projects;

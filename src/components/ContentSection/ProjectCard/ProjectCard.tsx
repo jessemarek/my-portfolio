@@ -10,12 +10,16 @@ export interface Project {
   img_src: string;
   site_url: string;
   gitHub_url: string;
-  description: string;
-  build_week?: boolean;
+  description: ProjectDetails;
+}
+
+interface ProjectDetails {
+  tech_stack: string;
+  features: string[];
 }
 
 export const ProjectCard: React.FC<Props> = ({
-  details: { name, img_src, site_url, gitHub_url, description, build_week },
+  details: { name, img_src, site_url, gitHub_url, description },
 }) => {
   return (
     <div className="project-card">
@@ -32,10 +36,12 @@ export const ProjectCard: React.FC<Props> = ({
         💬
       </span>
       <div className="description-overlay">
-        {build_week && (
-          <p className="build-week-title">-- Build Week Project --</p>
-        )}
-        <p>{description}</p>
+        <p className="tech-stack">{description.tech_stack}</p>
+        <ul className="feature-list">
+          {description.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
       </div>
       <div className="link-btns">
         {site_url === "none" ? null : (
