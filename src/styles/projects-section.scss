@@ -79,15 +79,22 @@
     opacity: 0;
     transition: all 0.5s ease;
 
-    .build-week-title {
+    .tech-stack {
       width: 100%;
-      margin: 1rem;
+      margin: 1.6rem auto;
+      font-size: 1.4rem;
       text-align: center;
     }
 
-    p,
-    a {
-      font-size: 1.6rem;
+    .feature-list {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+      list-style: circle;
+
+      li {
+        display: list-item;
+      }
     }
   }
 
