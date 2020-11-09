@@ -1,6 +1,15 @@
 .nav-links {
   margin: 1rem auto;
 
+  li {
+    transition: all 0.5s ease;
+  }
+
+  li.preload {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
   a {
     position: relative;
     text-decoration: none;
