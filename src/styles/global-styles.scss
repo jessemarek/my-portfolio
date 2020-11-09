@@ -14,7 +14,13 @@ body {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    transition: all 0.5s ease;
+  }
+
+  h1.preload {
+    opacity: 0;
+    transform: translateY(-50px);
   }
 
   h2 {
@@ -39,7 +45,7 @@ body {
 
   .section-description {
     width: 90%;
-    margin: 0 auto 3%;
+    margin: 5% auto 0;
   }
 }
 
