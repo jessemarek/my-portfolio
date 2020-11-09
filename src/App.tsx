@@ -24,7 +24,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Header />
+      <Header links={sections} />
       <h2 className="header-subtitle">
         <span role="img" aria-label="laptop emoji">
           💻

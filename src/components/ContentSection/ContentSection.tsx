@@ -1,10 +1,10 @@
 import React from "react";
 // Components and Type Interfaces
-import { Projects, ProjectsContent } from "./ProjectsContent";
-import { Skills, SkillsContent } from "./SkillsContent";
-import { About, AboutContent } from "./AboutContent";
-import { Interests, InterestsContent } from "./InterestsContent";
-import { Contact, ContactContent } from "./ContactContent";
+import { /* Projects,*/ ProjectsContent } from "./ProjectsContent";
+import { /*Skills,*/ SkillsContent } from "./SkillsContent";
+import { /*About,*/ AboutContent } from "./AboutContent";
+import { /*Interests,*/ InterestsContent } from "./InterestsContent";
+import { /*Contact,*/ ContactContent } from "./ContactContent";
 
 interface Props {
   content: SectionContent;
