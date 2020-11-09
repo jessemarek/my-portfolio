@@ -1,30 +1,22 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { SectionContent } from "./ContentSection/ContentSection";
 
-export const NavBar: React.FC = () => {
+interface Props {
+  links: SectionContent[];
+}
+
+export const NavBar: React.FC<Props> = ({ links }) => {
   return (
     <nav className="site-nav">
       <ul className="nav-links">
-        <li>
-          <Link to="projects" smooth={true} href="#projects">
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} href="#skills">
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} href="#about">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} href="#contact">
-            Contact
-          </Link>
-        </li>
+        {links.map((link, index) => (
+          <li key={index}>
+            <Link to={link.id} smooth={true} href={`#${link.id}`}>
+              {link.title}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
