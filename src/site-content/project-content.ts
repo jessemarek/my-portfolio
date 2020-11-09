@@ -1,8 +1,6 @@
 export const projectContent = {
   id: "projects",
   title: "Projects",
-  // description:
-  //   "These are some of the projects I have worked on as a student at Lambda School as well as some personal projects I built for myself or to learn new skills. Several of these projects were done during Lambda School Build Weeks. What is a Build Week? At Lambda School, a build week is sort of like a test. It is a way to show that you have mastered all of the skills learned during the current unit of instruction. A unit is a one month - or 4 sprints - long block of instruction. It consists of 3 weeks of instruction followed up by a build week. This is where you demonstrate your understanding of all the concepts you learned in a collaborative group project with other students. Each project team is comprised of students at different points along the journey through Lambda School. The Build Week projects were greenfield projects built in one week by a team of student devs.",
   content: {
     type: "PROJECTS",
     details: [
@@ -83,10 +81,16 @@ export const projectContent = {
         gitHub_url: "https://github.com/jessemarek/CS-build-week",
         description: {
           tech_stack: "React | JavaScript | SASS",
-          features: ["Lambda School Build Week Project", "", ""],
+          features: [
+            "Lambda School Build Week Project",
+            "Developed algorithm that obeys the rules to Conway's Game of Life",
+            "Project focused on CS concepts",
+          ],
         },
         //"The focus of this project was on creating the algorithm that follows the rules of Conway's Game of Life.",
       },
     ],
+    description:
+      "These are some of the projects I have worked on as a student at Lambda School as well as some personal projects I built for myself or to learn new skills. Several of these projects were done during Lambda School Build Weeks. What is a Build Week? At Lambda School, a build week is sort of like a test. It is a way to show that you have mastered all of the skills learned during the current unit of instruction. A unit is a one month - or 4 sprints - long block of instruction. It consists of 3 weeks of instruction followed up by a build week. This is where you demonstrate your understanding of all the concepts you learned in a collaborative group project with other students. Each project team is comprised of students at different points along the journey through Lambda School. The Build Week projects were greenfield projects built in one week by a team of student devs.",
   },
 };

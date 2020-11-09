@@ -29,12 +29,8 @@ export const ProjectCard: React.FC<Props> = ({
           <img src={img_src} alt="project thumbnail" />
         </div>
       )}
-      <span className="exit-icon" role="img" aria-label="exit icon">
-        X
-      </span>
-      <span className="info-icon" role="img" aria-label="info icon">
-        💬
-      </span>
+      <i className="fas fa-bars info-icon"></i>
+      <i className="fas fa-times exit-icon"></i>
       <div className="description-overlay">
         <p className="tech-stack">{description.tech_stack}</p>
         <ul className="feature-list">
