@@ -3,6 +3,6 @@ export const interestsContent = {
   title: "Interests",
   content: {
     type: "INTERESTS",
-    details: "",
+    details: "Other things about me that you don't care about!",
   },
 };

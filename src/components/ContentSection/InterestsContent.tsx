@@ -10,5 +10,5 @@ export interface Interests {
 }
 
 export const InterestsContent: React.FC<Props> = ({ content: { details } }) => {
-  return <></>;
+  return <h3>{details}</h3>;
 };
