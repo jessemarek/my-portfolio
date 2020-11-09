@@ -37,6 +37,7 @@ export const skillsContent = {
       "Agile Workflow",
       "Ant Design Components",
       "React Beautiful DnD",
+      "GIMP",
     ],
   },
 };
