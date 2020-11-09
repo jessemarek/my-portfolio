@@ -23,45 +23,4 @@
       }
     }
   }
-
-  form {
-    width: 79%;
-    border: 1px solid #292929;
-    padding: 10%;
-    background: ivory;
-
-    label,
-    input,
-    textarea,
-    button {
-      display: block;
-      width: 100%;
-    }
-
-    input,
-    textarea {
-      margin: 5% 0;
-    }
-
-    input {
-      height: 2rem;
-    }
-
-    button {
-      margin: 10% auto 0;
-      border: 2px solid darkslategrey;
-      border-radius: 7px;
-      padding: 1rem;
-      background: darkslategrey;
-      color: whitesmoke;
-      font-size: 2.4rem;
-      transition: all 0.3s ease;
-
-      &:hover {
-        background: whitesmoke;
-        color: darkslategrey;
-        cursor: pointer;
-      }
-    }
-  }
 }
