@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Header, ContentSection, Footer, BackToTop } from "./components";
+import { SubTitle } from "./components/SubTitle";
 import {
   projectContent,
   skillsContent,
@@ -19,25 +20,29 @@ const App: React.FC = () => {
     projectContent,
     skillsContent,
     aboutContent,
+    // interestsContent,
     contactContent,
   ];
+
+  const mainRef = useRef<HTMLHtmlElement | null>(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      mainRef.current?.classList.remove("preload");
+    }, 100);
+  }, []);
 
   return (
     <>
       <Header links={sections} />
-      <h2 className="header-subtitle">
-        <span role="img" aria-label="laptop emoji">
-          💻
-        </span>{" "}
-        Let's Code Something Cool Together!{" "}
-        <span role="img" aria-label="rocket emoji">
-          🚀
-        </span>
-      </h2>
-      {sections &&
-        sections.map((section, index) => (
-          <ContentSection key={index} content={section} />
-        ))}
+      <SubTitle />
+      {/* <main> wraps site content for a preload animation */}
+      <main ref={mainRef} className="preload">
+        {sections &&
+          sections.map((section, index) => (
+            <ContentSection key={index} content={section} />
+          ))}
+      </main>
       <Footer />
       <BackToTop />
     </>
