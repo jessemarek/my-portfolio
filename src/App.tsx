@@ -35,7 +35,7 @@ const App: React.FC = () => {
   return (
     <>
       <Header links={sections} />
-      <SubTitle />
+      {/* <SubTitle /> */}
       {/* <main> wraps site content for a preload animation */}
       <main ref={mainRef} className="preload">
         {sections &&
