@@ -1,8 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 
 export const SubTitle = () => {
   const laptopRef = useRef<HTMLHeadingElement | null>(null);
   const rocketRef = useRef<HTMLHeadingElement | null>(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      rocketRef.current?.classList.add("clickme");
+      laptopRef.current?.classList.add("clickme");
+    }, 5000);
+  }, []);
 
   const clickHandler = (id: string) => {
     switch (id) {
@@ -12,10 +19,17 @@ export const SubTitle = () => {
         setTimeout(() => {
           rocketRef.current?.classList.add("launch");
         }, 250);
+        setTimeout(() => {
+          rocketRef.current?.classList.add("hide");
+        }, 500);
         break;
 
       case "laptop":
         laptopRef.current?.classList.remove("shake");
+        laptopRef.current?.classList.remove("clickme");
+        setTimeout(() => {
+          laptopRef.current?.classList.add("fire");
+        }, 250);
         break;
 
       default:

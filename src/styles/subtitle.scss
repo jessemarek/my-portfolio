@@ -4,7 +4,7 @@
   h2 {
     display: inline-block;
     width: auto;
-    margin: 0 5px;
+    margin: 0;
     font-size: 1.8rem;
     transition: all 0.5s ease;
 
@@ -15,8 +15,20 @@
 
   #laptop,
   #rocket {
-    width: 30px;
+    position: relative;
+    width: 48px;
     cursor: pointer;
+  }
+
+  .fire {
+    &::before {
+      content: "🔥";
+      position: absolute;
+      bottom: 6px;
+      left: 12px;
+      opacity: 0.6;
+      animation: wiggle 0.8s infinite;
+    }
   }
 
   .launch {
@@ -26,10 +38,14 @@
   .clickme {
     &::after {
       content: "(click me)";
-      position: relative;
+      position: absolute;
       bottom: -15px;
-      left: -54%;
+      left: 0;
       font-size: 1rem;
     }
+  }
+
+  .hide {
+    display: none;
   }
 }
