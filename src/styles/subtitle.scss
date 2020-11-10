@@ -1,0 +1,35 @@
+.header-subtitle {
+  text-align: center;
+
+  h2 {
+    display: inline-block;
+    width: auto;
+    margin: 0 5px;
+    font-size: 1.8rem;
+    transition: all 0.5s ease;
+
+    @media screen and (min-width: 800px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  #laptop,
+  #rocket {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .launch {
+    transform: translate(500px, -500px);
+  }
+
+  .clickme {
+    &::after {
+      content: "(click me)";
+      position: relative;
+      bottom: -15px;
+      left: -54%;
+      font-size: 1rem;
+    }
+  }
+}

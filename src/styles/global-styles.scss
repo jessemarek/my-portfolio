@@ -53,6 +53,15 @@ section {
   margin: 5% auto 7%;
 }
 
+main {
+  transition: all 0.5s ease;
+}
+
+main.preload {
+  opacity: 0;
+  transform: translateY(150px);
+}
+
 header,
 footer {
   background: linear-gradient(45deg, lightslategrey, darkslategrey);
