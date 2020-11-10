@@ -10,7 +10,7 @@ export const Header: React.FC<Props> = ({ links }) => {
   const h1Ref = useRef<HTMLHeadingElement | null>(null);
 
   useEffect(() => {
-    h1Ref.current && h1Ref.current.classList.remove("preload");
+    h1Ref.current?.classList.remove("preload");
   }, []);
 
   return (
