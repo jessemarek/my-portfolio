@@ -14,7 +14,7 @@ export const projectContent = {
           tech_stack:
             "React | Recoil | JavaScript | SASS | HTML | Node | Express",
           features: [
-            "Wordpress site refactored into React",
+            "WordPress site refactored into React",
             "RESTful API that serves data",
             "Dark Mode enabled",
           ],
@@ -30,7 +30,6 @@ export const projectContent = {
         description: {
           tech_stack: "React | Recoil | JavaScript | CSS | HTML | AWS Amplify",
           features: [
-            "Final project at Lambda School",
             "Co-Authored an image upload component complete with file type checking",
             "Refactored state management into a global state system using Recoil",
             "Reviewed and merged approved PRs into production",
