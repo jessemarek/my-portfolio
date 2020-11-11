@@ -25,36 +25,51 @@ export const SkillsContent: React.FC<Props> = ({ content: { details } }) => {
     setSkillsList(newArray);
   };
 
-  const toggleWiggle = () => {
-    // starting index
-    let index = 0;
-    // will loop through the skill badge refs and toggle class name at set interval
+  /*
+   * Loops through skill badges and toggles a wiggle animation
+   * Starts at element that was clicked and moves left and right
+   * through entire array
+   */
+  const toggleWiggle = (index: number) => {
+    // set the intial values for left and right pointers
+    let left = index;
+    let right = left + 1;
+    // the length of the array
+    const length = skillBadgeRefs.current.length;
+
     setInterval(() => {
-      // if the index is equal to the length we are done with all the refs
-      if (index === skillBadgeRefs.current.length) {
+      // if the left is less than 0 and the right is equal
+      // to the length then we have toggled the entire array
+      if (left < 0 && right === length) {
         // exit the loop
         return;
       } else {
-        // toggle the wiggle class name and set the next index
-        skillBadgeRefs.current[index].classList.toggle("wiggle");
-        index++;
+        // toggle the wiggle class name and set the next index to the right
+        if (right < skillBadgeRefs.current.length) {
+          skillBadgeRefs.current[right].classList.toggle("wiggle");
+          right++;
+        }
+        // toggle the wiggle class name and set the next index to the left
+        if (left >= 0) {
+          skillBadgeRefs.current[left].classList.toggle("wiggle");
+          left--;
+        }
       }
-    }, 50);
+    }, 100);
   };
 
-  const clickHandler = () => {
-    toggleWiggle();
-    // shuffleList();
-    // toggleWiggle();
+  const clickHandler = (id: string) => {
+    toggleWiggle(Number(id));
   };
 
   return (
     <ul>
       {skillsList.map((skill, index) => (
         <li
+          id={`${index}`}
           key={index}
           ref={(el) => (skillBadgeRefs.current[index] = el)}
-          onClick={clickHandler}
+          onClick={(e) => clickHandler(e.currentTarget.id)}
         >
           <span>{skill}</span>
         </li>
