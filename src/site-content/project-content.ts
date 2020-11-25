@@ -1,3 +1,8 @@
+let id: number = 0;
+function generateId(num: number): number {
+  return ++num;
+}
+
 export const projectContent = {
   id: "projects",
   title: "Projects",
@@ -5,7 +10,23 @@ export const projectContent = {
     type: "PROJECTS",
     details: [
       {
-        id: 1,
+        id: generateId(id),
+        name: "Free Daily Story Contest",
+        img_src: "/assets/images/fdsc-thumbnail.png",
+        site_url: "https://contest.storysquad.app/",
+        gitHub_url: "https://github.com/ss-mvp/frontend",
+        description: {
+          tech_stack:
+            "React | Recoil | TypeScript | SASS | HTML | Node | Express",
+          features: [
+            "Architected the Dragon Drop (Drag and Drop) voting system",
+            "Assisted in project refactor from JavaScript into TypeScript",
+            "Refactored state management into Recoil",
+          ],
+        },
+      },
+      {
+        id: generateId(id),
         name: "Soul Hunters Hero Guide",
         img_src: "/assets/images/shhg-thumbnail.png",
         site_url: "https://heroguide.now.sh/",
@@ -22,7 +43,7 @@ export const projectContent = {
         // "This is where it all began. This was the first website I built. I taught myself about HTML and CSS and deployed it using Wordpress. In this project I revisited and refactored it using a modern tech stack. This version is built using React and utilizes a Node/Express API to serve up the data.",
       },
       {
-        id: 2,
+        id: generateId(id),
         name: "Story Squad",
         img_src: "/assets/images/storysquad-thumbnail.png",
         site_url: "none",
@@ -39,7 +60,7 @@ export const projectContent = {
         //"Story Squad is an interactive educational platform aimed at children ages 8-12, allowing them to read a story and help create the story by uploading handwritten 'side quests' with illustrations. Built during Lambda School's Labs which is the final portion of the school's Full Stack Web Dev course.",
       },
       {
-        id: 3,
+        id: generateId(id),
         name: "Saltiest Hacker News Trolls",
         img_src: "/assets/images/hacker-trolls-thumbnail.png",
         site_url: "https://salty-trolls.now.sh/",
@@ -56,7 +77,7 @@ export const projectContent = {
         //"An app that rates and ranks hacker news commenters by negativity of comment sentiment.",
       },
       {
-        id: 4,
+        id: generateId(id),
         name: "Lambda Dev Desk Queue",
         img_src: "/assets/images/dev-desk-thumbnail.png",
         site_url: "https://dev-desk-queue.now.sh/",
@@ -73,7 +94,7 @@ export const projectContent = {
         //"An app designed to allow an admin to manage help desk tickets that come in from Lambda School Students.",
       },
       {
-        id: 5,
+        id: generateId(id),
         name: "Conway's Game of Life",
         img_src: "/assets/images/game-of-life-thumbnail.png",
         site_url: "https://marekgameoflife.now.sh/",
