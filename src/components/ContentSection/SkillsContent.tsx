@@ -14,18 +14,20 @@ export const SkillsContent: React.FC<Props> = ({ content: { details } }) => {
 
   const skillBadgeRefs = useRef<any[]>([]);
 
-  // reorders the items in the array randomly
-  const shuffleList = () => {
-    const newArray = [...skillsList];
-    let i = newArray.length;
-    while (i--) {
-      const ri = Math.floor(Math.random() * (i + 1));
-      [newArray[i], newArray[ri]] = [newArray[ri], newArray[i]];
-    }
-    setSkillsList(newArray);
-  };
+  /**
+   * reorders the items in the array randomly
+   */
+  // const shuffleList = () => {
+  //   const newArray = [...skillsList];
+  //   let i = newArray.length;
+  //   while (i--) {
+  //     const ri = Math.floor(Math.random() * (i + 1));
+  //     [newArray[i], newArray[ri]] = [newArray[ri], newArray[i]];
+  //   }
+  //   setSkillsList(newArray);
+  // };
 
-  /*
+  /**
    * Loops through skill badges and toggles a wiggle animation
    * Starts at element that was clicked and moves left and right
    * through entire array
